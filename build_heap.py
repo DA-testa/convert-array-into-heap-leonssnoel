@@ -5,7 +5,7 @@
 def build_heap(data):
     swaps = []
     n = len(data)
-    for i in range(n // 2):
+    for i in range(n // 2 - 1, -1, -1):
         current = i
         left_child = 2 * current + 1
         right_child = 2 * current + 2
