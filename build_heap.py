@@ -10,7 +10,7 @@ def build_heap(data):
         left_child = 2 * current + 1
         right_child = 2 * current + 2
         while left_child < n:
-            # Determine the smallest child
+     
             smallest_child = left_child
             if right_child < n and data[right_child] < data[left_child]:
                 smallest_child = right_child
